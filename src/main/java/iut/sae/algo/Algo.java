@@ -29,13 +29,19 @@ public class Algo{
     }
 
     public static String RLE(String in, int iteration) throws AlgoException{
-        // Provide your algo here
-        return "NotYetImplemented";
+        if (iteration<1){
+            throw new AlgoException();
+        }
+        String str_compresse=in;
+        for (int i=0; i<iteration;i++){
+            str_compresse=RLE(str_compresse);
+        }
+        return str_compresse;
     }
 
     public static String unRLE(String in) throws AlgoException{
-        // Provide your algo here
-        return "NotYetImplemented";
+        
+        return null;
 
     }
 
