@@ -7,24 +7,24 @@ public class Algo{
         }
         StringBuilder str_compresse= new StringBuilder();
         char chr_lettre=in.charAt(0);
-        int count=1;
+        int it_compter=1;
 
         for (int i=1; i<in.length();i++){
             if (in.charAt(i)==chr_lettre){
-                count++;
-                if(count==10){
+                it_compter++;
+                if(it_compter==10){
                     str_compresse.append(9);
                     str_compresse.append(chr_lettre);
-                    count=1;
+                    it_compter=1;
                 }
             }else{
-                str_compresse.append(count);
+                str_compresse.append(it_compter);
                 str_compresse.append(chr_lettre);
                 chr_lettre=in.charAt(i);
-                count=1;
+                it_compter=1;
             }
         }
-        str_compresse.append(count).append(in.charAt(in.length()-1));
+        str_compresse.append(it_compter).append(in.charAt(in.length()-1));
         return str_compresse.toString();
     }
 
@@ -40,9 +40,18 @@ public class Algo{
     }
 
     public static String unRLE(String in) throws AlgoException{
-        
-        return null;
-
+        if (in.isEmpty()){
+            return "";
+        }
+        StringBuilder str_compresse= new StringBuilder();
+        for (int i=0;i<in.length();i+=2){
+            if((Character.getNumericValue(in.charAt(i))>=1) || (Character.getNumericValue(in.charAt(i))<=9)){    
+                for(int k=0;k<(Character.getNumericValue(in.charAt(i)));k++){
+                    str_compresse.append(in.charAt(i+1));
+                }
+            }
+        }
+        return str_compresse.toString();
     }
 
     public static String unRLE(String in, int iteration) throws AlgoException{
