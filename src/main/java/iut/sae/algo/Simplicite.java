@@ -1,6 +1,4 @@
-package iut;
-
-import iut.sae.algo.AlgoException;
+package iut.sae.algo;
 
 public class Simplicite {
     public static String RLE(String in){
