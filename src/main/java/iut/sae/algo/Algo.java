@@ -55,9 +55,17 @@ public class Algo{
     }
 
     public static String unRLE(String in, int iteration) throws AlgoException{
-        // Provide your algo here
-        return "NotYetImplemented";
-
+        if (iteration<1){
+            throw new AlgoException();
+        }
+        if (in.isEmpty()){
+            return "";
+        }
+        String str_compresse=in;
+        for (int i=0; i<iteration;i++){
+            str_compresse=unRLE(str_compresse);
+        }
+        return str_compresse;
     }
 }
 
