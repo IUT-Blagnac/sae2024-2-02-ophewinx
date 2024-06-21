@@ -185,7 +185,8 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 Voici les pré-requis pour exécuter nos codes d'évaluation.
 
-- Java v.x.y.z
+- Java 21 ou Java 17, ou autre
+- Python 3.11.9 ou autre
 - ...
 
 === Reproductibilité
@@ -197,7 +198,8 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
+- link:https://www.codacy.com/z[Codacy]
+- link:https://replit.com/[Replit pour le C]
 - ...
 
 == Généralités, notation de la SAÉ et résultat du concours
