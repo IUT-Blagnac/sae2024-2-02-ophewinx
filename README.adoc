@@ -167,9 +167,9 @@ Vous utiliserez le dépôt initial qui vous aura été attribué via classroom p
 [options="header"]
 |==========================================================================
 | #    | lien                                                     | langage  | catégorie 
-| 1    | link:src/main/java/exercice/Exercice1.java[meilleur java]| Java     | Simplicité
-| 2    | link:src/main/java/exercice/Exercice2.java[meilleur C]    | C     | Efficacité
-| ...  | ...                                                      | ...      | ...      
+| 1    | link:src/main/java/iut/sae/algo/Simplicite.java[meilleur java]| Java     | Simplicité
+| 2    | link:src/main/java/iut/sae/algo/Efficacite.java[meilleur Java]| Java     | Efficacité
+| 3    | link:src/main/java/iut/sae/algo/Sobriete.java[meilleur Java]| Java      | Sobriété     
 |==========================================================================
 
 === Phase 2 (deadline : **vendredi 21 juin 2024** à minuit)
@@ -185,7 +185,8 @@ WARNING: Les répertoires et fichiers existants devront être complétés et mis
 
 Voici les pré-requis pour exécuter nos codes d'évaluation.
 
-- Java v.x.y.z
+- Java 21 ou Java 17, ou autre
+- Python 3.11.9 ou autre
 - ...
 
 === Reproductibilité
@@ -197,7 +198,8 @@ Voici les pré-requis pour exécuter nos codes d'évaluation.
 
 === Références
 
-- link:http://xyz[Mon super outil XYZ]
+- link:https://www.codacy.com/z[Codacy]
+- link:https://replit.com/[Replit pour le C]
 - ...
 
 == Généralités, notation de la SAÉ et résultat du concours
